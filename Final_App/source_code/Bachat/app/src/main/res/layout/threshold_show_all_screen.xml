@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_screen">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/transactionhistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionhistory"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fontFamily="@font/roboto"
+                android:layout_marginStart="22dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Remaining Budget: "/>
+            <TextView
+                android:id="@+id/remainingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textColor="@color/primarytextbetadarkbackground"
+                android:text="Remaining Amount"
+                tools:ignore="RtlCompat"
+                android:fontFamily="@font/roboto"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout"
+        android:background="@drawable/extend_graph_background">
+
+        <Spinner
+            android:id="@+id/spinnerMonthThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:paddingTop="10dp"
+            android:backgroundTint="@color/Black"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/budgetImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/budgetImage_1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/thresholdicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/budgetImage_1"
+                android:text="Please choose valid month"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/listViewThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/spinnerMonthThreshold"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

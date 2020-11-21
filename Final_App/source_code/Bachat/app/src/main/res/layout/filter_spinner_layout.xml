@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subcategory"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:textColor="@color/primaryTextColorBetalightbackground"
+    android:background="@color/white_background"
+    android:text="Miscellanous Transfer"
+    android:gravity="center_vertical"
+    android:fontFamily="@font/roboto"
+    android:textSize="15sp"
+    android:paddingLeft="10dp" />

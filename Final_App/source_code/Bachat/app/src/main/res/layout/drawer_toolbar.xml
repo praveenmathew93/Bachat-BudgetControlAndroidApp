@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="?attr/actionBarTheme"
+    android:textAlignment="center"
+    android:orientation="vertical"
+    android:background="@color/toolBarNav">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:text="Bachat"
+                    android:textAlignment="viewStart"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    android:layout_alignParentLeft="true"
+                    android:textAllCaps="false"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="4dp"/>
+
+        </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

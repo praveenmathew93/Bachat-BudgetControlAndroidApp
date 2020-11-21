@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Material.NoActionBar"
+    tools:context="com.example.Bachat.SetupScreen"
+    android:background="@color/primarytextbetadarkbackground">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relHeader"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="20dp">
+
+                <com.scwang.wave.MultiWaveHeader
+                    android:id="@+id/MultiWave"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleY="1"
+                    app:mwhVelocity="5"
+                    app:mwhProgress="1"
+                    app:mwhIsRunning="true"
+                    app:mwhGradientAngle="45"
+                    app:mwhWaveHeight="50dp"
+                    app:mwhColorAlpha="0.45"
+                    app:mwhStartColor="@color/startgradientprofile"
+                    app:mwhCloseColor="@color/endgradientprofile"
+                    app:mwhWaves="MultiWave"/>
+
+                <TextView
+                    android:id="@+id/textViewWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="WELCOME TO BACHAT"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEditName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:errorEnabled="true"
+                android:layout_below="@id/relHeader">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:hint="Username"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                android:layout_below="@+id/editTextEditName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:hint="Password"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEditPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:endIconMode="password_toggle"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:errorEnabled="true"
+                android:layout_below="@+id/editTextEditPassword">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:hint="Confirm Password"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_lay_1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/editTextEditPasswordConfirm"
+                android:background="@color/textInput_color_back"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="15dp"
+                    android:theme="@style/TextInputLayoutAppearance"
+                    android:text="Question"
+                    android:paddingStart="10dp"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:textSize="12sp"/>
+
+                <Spinner
+                    android:id="@+id/spnQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:theme="@style/TextInputLayoutAppearance"
+                    android:backgroundTint="@color/textInput_color_2"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextEditQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/textInput_color_back"
+                android:text="Test"
+                android:textColor="@drawable/edit_text_setup"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:visibility="invisible"
+                android:layout_below="@id/editTextEditPasswordConfirm"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto"/>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEditAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:errorEnabled="true"
+                android:layout_below="@+id/lin_lay_1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Answer"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:fontFamily="@font/roboto"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEditMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:errorEnabled="true"
+                android:layout_below="@+id/editTextEditAnswer">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E-Mail"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:inputType="textEmailAddress"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lin_lay_2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/editTextEditMail"
+                android:background="@color/textInput_color_back"
+                android:theme="@style/TextInputLayoutAppearance"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="15dp"
+                    android:text="Default Currency"
+                    android:paddingStart="10dp"
+                    android:textColor="@drawable/edit_text_setup"
+                    android:theme="@style/TextInputLayoutAppearance"
+                    android:textSize="12sp"/>
+
+
+                <Spinner
+                    android:id="@+id/spnCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:theme="@style/TextInputLayoutAppearance"
+                    android:backgroundTint="@drawable/edit_text_setup" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/startgradientprofile"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:borderWidth="0dp"
+        android:elevation="5dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:weightSum="100">
+
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Category"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSubcategory"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Sub-category"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewModeOfPayment"
+        android:layout_width="93dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Payment Mode"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="45dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Amount"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Date"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

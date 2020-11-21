@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:background="@drawable/helpviewpager1"
+    android:layout_height="match_parent"
+    tools:context=".HelpMenuActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOnboardingAction"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@color/dialogbox"
+
+
+        android:textColor="@color/cardBeta"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:id="@+id/onboardoingViewPager1"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:id="@+id/layoutOnboardingIndicators"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_toLeftOf="@+id/buttonOnboardingAction"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

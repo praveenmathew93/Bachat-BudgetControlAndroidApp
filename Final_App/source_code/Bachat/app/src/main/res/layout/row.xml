@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:background="@drawable/profile_screen"
+    android:backgroundTint="@color/PrimaryDarkColour5"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:id="@+id/linear_layout11"
+        android:background="@drawable/help2"
+
+
+
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+        <TextView
+
+            android:id="@+id/code_name"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:text="User Details"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_toEndOf="@id/Name_Button"
+            android:background="@drawable/help2"
+
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help4"
+            android:id="@+id/expandable_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/version"
+                android:text="Version"
+                android:gravity="left"
+                android:layout_marginLeft="0dp"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/IncomeExpenseText" />
+
+
+
+
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:contextClickable="true"
+
+                android:id="@+id/btn1"
+                android:background="@null"
+                android:text="More"
+
+                android:textColor="@color/PrimaryColour"
+
+
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+
+
+
+                android:layout_marginStart="310dp" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

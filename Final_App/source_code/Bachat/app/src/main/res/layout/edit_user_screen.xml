@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/FlashTheme"
+    android:background="@drawable/profile_screen"
+    tools:context="com.example.Bachat.SetupScreen">
+
+
+    <ImageButton
+        android:id="@+id/btn_Back"
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ic_arrow_back"
+        android:background="@null"
+        android:padding="50dp"/>
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit User Details"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/relLayout_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/toolbar_title">
+
+        <TextView
+            android:id="@+id/textViewEditName"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="User Name"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textAlignment="viewStart"
+            android:paddingRight="10dp"
+            android:textColor="@color/primarytextbetadarkbackground"/>
+
+        <EditText
+            android:id="@+id/editTextEditName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_box"
+            android:ems="10"
+            android:layout_toEndOf="@id/textViewEditName"
+            android:hint="What would you like to be called?"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/primarytextbetadarkbackground" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/relLayout_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textViewEditMail"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="E-Mail"
+            android:gravity="center_vertical"
+            android:textAlignment="viewStart"
+            android:paddingRight="10dp"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/editTextEditMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Where can we reach you at?"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_box"
+            android:paddingLeft="10dp"
+            android:textCursorDrawable="@null"
+            android:layout_toEndOf="@+id/textViewEditMail"
+            android:textColor="@color/primarytextbetadarkbackground"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/relLayout_3"
+        android:layout_below="@id/relLayout_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textSetCurrency"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Currency"
+            android:gravity="center_vertical"
+            android:textAlignment="viewStart"
+            android:paddingRight="10dp"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/editCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/primarytextbetadarkbackground"
+            android:layout_toRightOf="@+id/textSetCurrency"
+            android:textColor="@color/primarytextbetadarkbackground"/>
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="CONFIRM"
+        android:layout_below="@id/relLayout_3"
+        android:background="@drawable/add_contact"
+        android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_home" />
+
+</RelativeLayout>

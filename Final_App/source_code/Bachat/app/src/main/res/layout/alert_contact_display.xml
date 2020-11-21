@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_background"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/txtContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="Contact"
+            android:gravity="center_vertical"
+            android:textColor="@color/primaryTextColorBetalightbackground"
+            android:textSize="20dp"
+            android:inputType="textMultiLine|none"
+            android:drawableLeft="@drawable/ic_person_name"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@null"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"/>
+
+
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+
+            android:layout_below="@id/txtContactName"
+
+            android:background="@color/primaryTextColorLightBlack_2" />
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_phone"
+                 />
+
+            <ListView
+                android:id="@+id/listNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/phone_icon"
+                android:divider="@color/white_background"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/rel_phone"
+            android:background="@color/primaryTextColorLightBlack_2" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_email" />
+
+            <ListView
+                android:id="@+id/listEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toEndOf="@id/email_icon"
+                android:layout_marginStart="20dp"
+                android:divider="@color/white_background"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

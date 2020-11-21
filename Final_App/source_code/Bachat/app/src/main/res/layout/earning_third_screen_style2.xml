@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/selection_higlight"
+    android:id="@+id/Parent_rel_layout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/appicon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bachat"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="20dp"
+            android:padding="30dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:background="@null"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/childRelLayout_2">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                android:text="Income"
+                android:textColor="@color/primarytextbetadarkbackground"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/toolbar_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/toolbar_title"
+                android:text="Add Details"
+                android:textColor="@color/subtitle"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/childRelLayout_2"
+            android:background="@color/primarytextbetadarkbackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/line1"
+                    android:padding="20dp"
+                    android:layout_below="@id/childRelLayout_2">
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="70dp"
+                        android:text="Date"
+                        android:textSize="20sp"
+                        android:typeface="sans"
+                        android:visibility="visible"
+                        />
+
+                    <DatePicker
+                        android:id="@+id/editTextDate2"
+                        android:layout_width="261dp"
+                        android:layout_height="139dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:ems="10"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:orientation="horizontal"
+                    android:id="@+id/line2"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textViewMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:text="Mode"
+                        android:textSize="20sp"
+                        android:typeface="sans"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                    <Spinner
+                        android:id="@+id/spnModes"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_box"
+                        android:hint="Choose mode of payment"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginStart="62dp"
+                        android:textColor="@color/primarytextbetadarkbackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:id="@+id/line3"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textViewAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:text="Amount"
+                        android:textSize="20sp"
+                        android:typeface="sans"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/editTextAmount2"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="42dp"
+                        android:ems="10"
+                        android:hint="Enter amount"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="15dp"
+                        android:background="@drawable/edit_text_box"/>
+
+                    <Spinner
+                        android:id="@+id/spnCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginStart="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:id="@+id/line4"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textViewNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:text="Note"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/editTextNote2"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="73dp"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="Add notes here..."
+                        android:inputType="textNoSuggestions"
+                        android:background="@drawable/edit_text_box"
+                        android:paddingLeft="15dp"/>
+
+                    <Button
+                        android:id="@+id/btnAddNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_contact"
+                        android:layout_marginLeft="5dp"
+                        android:text="Add note"
+                        android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnAddTransaction"
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/line4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/add_contact"
+                    android:textColor="@color/primaryTextColorBetalightbackground"
+                    android:text="Add  Income" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:layout_marginStart="339dp"
+                    android:layout_marginTop="530dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:tint="@color/Black"
+                    app:srcCompat="@drawable/ic_home"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+
+
+                <Button
+                    android:id="@+id/buttonAddContact"
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/line4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Add Contact"
+                    android:background="@drawable/add_contact"
+                    android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+
+                <Button
+                    android:id="@+id/buttonAddedContact"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/line4"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Contact Added"
+                    android:background="@drawable/contact_card"
+                    android:textColor="@color/primaryTextColorBetalightbackground" />
+
+
+                <ImageButton
+                    android:id="@+id/buttonRemContact"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/line4"
+                    android:layout_toRightOf="@+id/buttonAddedContact"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/delete_contact" />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

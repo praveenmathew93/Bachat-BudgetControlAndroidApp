@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_screen">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/filter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:id="@+id/chooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/editFirstDate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/chooseDate"
+        android:background="#353333"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/editSecondDate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spnCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/editFirstDate"
+        android:background="#FF353333"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/appliedFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSecondDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-28dp"
+        android:text="No Active filters"
+        android:textSize="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerlistFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="80dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/action_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/action_image"
+            android:id="@+id/prompt_no_transactions"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/prompt_no_transactions"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:id="@+id/prompt_no_transactions_2"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
