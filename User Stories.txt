@@ -1,0 +1,24 @@
+MONEY CONTROL - USER STORIES 
+
+Essential:
+As a user, I would like to be able to enter my expenses and group them into categories.
+As a user, I would like to add date and timestamp on every expense I enter.
+As a user, I would like to select expenses based on filters like category, date and time, monthly and yearly.  
+As a user, I would like to have a feature of adding notes, bullet points and other details for every expense I add.
+As a user, I would like to have an option to choose the method of payment.
+As a user, I would like to have a repeat expense option for me to repeat an expense from the list of expenditures.
+
+Necessary:
+As a user, I would like to have icons assigned to each category.
+As a user, I would like to have an option of updating and/or deleting my transaction entries when required.
+As a user, I would like to see the list of repeated transactions to choose from when I am entering a new transaction.
+As a user, I would like to have a feature for overall budget planning and also be able to set category level thresholds.
+As a user, I would like to have a dedicated tab to enter incomes from all different sources.
+
+
+Nice to have:
+As a user, I would like to see my expenses in the form of graphs or charts, to enable me to have a percentage overview. 
+As a user, I would like to have a help section that gives me overview of how to use the application.
+As a user, I would like to have insights about my spending habits, including categories in which I spend most on a weekly/monthly/early basis.
+As a user, I would like the app to import/export my weekly/monthly/yearly details of entries.
+As a user, I would like to select the currency type when I enter the transaction and convert it to default currency that I have set.
