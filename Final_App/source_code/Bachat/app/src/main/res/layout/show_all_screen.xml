@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/selectFilter"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Filter"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spnOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:background="#BDBABA" />
+
+    <TextView
+        android:id="@+id/chooseCategory"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="Choose Category" />
+
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="65dp"
+        android:background="#BDBABA"
+        android:foregroundTint="#BDBABA" />
+
+    <TextView
+        android:id="@+id/chooseDate"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:text="Choose Date " />
+
+    <TextView
+        android:id="@+id/chooseYear"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="120dp"
+        android:text="Year: " />
+
+    <Spinner
+        android:id="@+id/spnYear"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="150dp"
+        android:background="#BDBABA" />
+
+    <TextView
+        android:id="@+id/chooseMonth"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="Month: "
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="120dp"/>
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="150dp"
+        android:background="#BDBABA" />
+
+    <TextView
+        android:id="@+id/chooseDay"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="120dp"
+        android:text="Day: " />
+
+    <Spinner
+        android:id="@+id/spnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="150dp"
+        android:background="#BDBABA" />
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#4C4C4C"
+        android:text="Show Data" />
+
+    <Button
+        android:id="@+id/btnLast"
+        android:layout_width="71dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#4C4C4C"
+        android:text="Home" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="248dp"
+        android:background="?android:attr/listDivider"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <ListView
+        android:id="@+id/listFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#55020202"
+        tools:layout_editor_absoluteY="122dp" />
+
+</RelativeLayout>

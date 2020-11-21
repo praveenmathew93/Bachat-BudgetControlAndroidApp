@@ -1,0 +1,222 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#232323</item> <!--Action Bar-->
+        <item name="colorPrimaryDark">@color/PrimaryDarkColour2</item> <!--Top Bar with battery-->
+        <item name="colorAccent">@color/PrimaryDarkColour2</item>
+        <item name="android:colorAccent" >@color/PrimaryDarkColour2</item>
+        <item name="android:colorBackground">@color/PrimaryDarkColour2</item> <!--Background-->
+        <item name="android:textColorPrimary">@color/PrimaryText</item>
+        <item name="android:textColorSecondary">@color/PrimaryText</item>
+        <item name="android:textColorTertiary">@color/PrimaryText</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/endgradientprofile</item>
+        <item name="colorPrimaryDark">@color/PrimaryDarkColour2</item>
+        <item name="colorAccent">@color/endgradientgraph</item>
+        <item name="android:headerBackground">@color/endgradientprofile</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#000000</item>
+        <item name="android:colorAccent" >@color/Black</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <!--New theme for views where custom toolbar is enabled-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/endgradientprofile</item>
+        <item name="colorPrimary">@color/endgradientprofile</item>
+        <item name="colorPrimaryDark">@color/endgradientprofile</item>
+        <item name="colorAccent">@color/endgradientprofile</item>
+        <item name="android:colorAccent" >@color/endgradientprofile</item>
+        <item name="android:colorBackground">@color/endgradientprofile</item>
+        <item name="android:textColorPrimary">@color/PrimaryText</item>
+        <item name="android:textColorSecondary">@color/PrimaryText</item>
+        <item name="android:textColorTertiary">@color/PrimaryText</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <!-- Flash screen theme. -->
+    <style name="FlashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Black</item>
+        <item name="colorPrimaryDark">@color/Black</item>
+        <item name="colorAccent">@color/Black</item>
+        <item name="android:statusBarColor">@color/endgradientprofile</item>
+        <item name="android:colorAccent" >@color/Black</item>
+        <item name="android:colorBackground">@color/PrimaryDarkColour2</item>
+        <item name="android:textColorPrimary">@color/PrimaryText</item>
+        <item name="android:textColorSecondary">@color/PrimaryText</item>
+        <item name="android:textColorTertiary">@color/PrimaryText</item>
+    </style>
+
+    <color name="BackgroundColour">@color/Grey</color>
+    <color name="Spinnercolor">@color/Grey</color>
+
+    <style name="EditTextHint1" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">#E1E1E1</item>
+        <item name="android:colorAccent" >@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--pop up menu style-->
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+
+    <!-- Slider activity . -->
+
+    <style name="Slider" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--Theme for views where custom toolbar is enabled Advanced Prototype-->
+    <style name="AppTheme.NoActionBarAdvanced">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/Black</item>
+        <item name="colorPrimaryDark">@color/PrimaryDarkColour2</item>
+        <item name="colorAccent">@color/Income</item>
+        <item name="android:colorAccent" >@color/Black</item>
+        <item name="android:colorBackground">@color/backgroundAdvanced</item>
+        <item name="android:textColorPrimary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorSecondary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorTertiary">@color/primaryTextColorAdvanced</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="AppThemeAdvanced" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolBarNav</item> <!--Action Bar-->
+        <item name="colorPrimaryDark">@color/PrimaryDarkColour2</item> <!--Top Bar with battery-->
+        <item name="colorAccent">@color/PrimaryDarkColour2</item>
+        <item name="android:colorAccent" >@color/PrimaryDarkColour2</item>
+        <item name="android:colorBackground">@color/backgroundAdvanced</item> <!--Background-->
+        <item name="android:textColorPrimary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorSecondary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorTertiary">@color/primaryTextColorAdvanced</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/setupTextColor</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+
+    <style name="AppTheme.Material.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/startgradientprofile</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/startgradientprofile</item>
+        <item name="colorAccent">@color/startgradientprofile</item>
+        <item name="android:colorAccent" >@color/startgradientprofile</item>
+        <item name="android:colorBackground">@color/white_background</item>
+        <item name="android:textColorPrimary">@color/PrimaryText</item>
+        <item name="android:textColorSecondary">@color/PrimaryText</item>
+        <item name="android:textColorTertiary">@color/PrimaryText</item>
+    </style>
+
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textInput_Error</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textInput_user_input_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:textColor">@color/textInput_user_input_color</item>
+        <item name="android:textColorHint">@color/textInput_unfocused_color</item>
+        <item name="colorControlNormal">@color/textInput_colorControlNormal</item>
+        <item name="colorControlActivated">@color/textInput_colorControlActivated</item>
+        <item name="colorControlHighlight">@color/textInput_colorControlHighlight</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/ic_payment</item>
+    </style>
+
+
+    <style name="BachatAppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolBarNav</item> <!--Action Bar-->
+        <item name="colorPrimaryDark">@color/PrimaryDarkColour2</item> <!--Top Bar with battery-->
+        <item name="colorAccent">@color/PrimaryDarkColour2</item>
+        <item name="android:colorAccent" >@color/PrimaryDarkColour2</item>
+        <item name="android:colorBackground">@color/backgroundAdvanced</item> <!--Background-->
+        <item name="android:textColorPrimary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorSecondary">@color/primaryTextColorAdvanced</item>
+        <item name="android:textColorTertiary">@color/primaryTextColorAdvanced</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style parent="@android:style/Widget.Spinner" name="SpinnerwithNoArrow">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+</resources>
+
+
+<!--<item name="colorControlActivated">#33691e</item>
+<item name="colorControlHighlight">#d50000</item>-->

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Expense">
+        <item name="android:statusBarColor">#B60505</item>
+        <item name="colorAccent">@color/expense_background</item>
+        <item name="android:colorAccent">@color/expense_background</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="HealthCare">
+        <item name="android:windowBackground">@color/healthcare</item>
+        <item name="colorAccent">@color/healthcare</item>
+        <item name="android:colorAccent">@color/healthcare</item>
+        <item name="android:statusBarColor">#5C0101</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="HealthCareDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/healthcare</item>
+        <item name="colorPrimaryDark">@color/healthcare</item>
+        <item name="colorAccent">@color/healthcare</item>
+        <item name="android:headerBackground">@color/healthcare</item>
+    </style>
+
+    <style name="Bills">
+        <item name="android:windowBackground">@color/bills</item>
+        <item name="colorAccent">@color/bills</item>
+        <item name="android:colorAccent">@color/bills</item>
+        <item name="android:statusBarColor">#011967</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="BillsDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/bills</item>
+        <item name="colorPrimaryDark">@color/bills</item>
+        <item name="colorAccent">@color/bills</item>
+        <item name="android:headerBackground">@color/bills</item>
+    </style>
+
+
+    <style name="Donations">
+        <item name="android:windowBackground">@color/donations</item>
+        <item name="colorAccent">@color/donations</item>
+        <item name="android:colorAccent">@color/donations</item>
+        <item name="android:statusBarColor">#430F3C</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="DonationsDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/donations</item>
+        <item name="colorPrimaryDark">@color/donations</item>
+        <item name="colorAccent">@color/donations</item>
+        <item name="android:headerBackground">@color/donations</item>
+    </style>
+
+    <style name="Shopping">
+        <item name="android:windowBackground">@color/shopping</item>
+        <item name="colorAccent">@color/shopping</item>
+        <item name="android:colorAccent">@color/shopping</item>
+        <item name="android:statusBarColor">#6A7144</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="ShoppingDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/shopping</item>
+        <item name="colorPrimaryDark">@color/shopping</item>
+        <item name="colorAccent">@color/shopping</item>
+        <item name="android:headerBackground">@color/shopping</item>
+    </style>
+
+    <style name="Dinning">
+        <item name="android:windowBackground">@color/dinning</item>
+        <item name="colorAccent">@color/dinning</item>
+        <item name="android:colorAccent">@color/dinning</item>
+        <item name="android:statusBarColor">#AEA028</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="DinningDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/dinning</item>
+        <item name="colorPrimaryDark">@color/dinning</item>
+        <item name="colorAccent">@color/dinning</item>
+        <item name="android:headerBackground">@color/dinning</item>
+    </style>
+
+    <style name="Groceries">
+        <item name="android:windowBackground">@color/groceries</item>
+        <item name="colorAccent">@color/groceries</item>
+        <item name="android:colorAccent">@color/groceries</item>
+        <item name="android:statusBarColor">#206538</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="GroceriesDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/groceries</item>
+        <item name="colorPrimaryDark">@color/groceries</item>
+        <item name="colorAccent">@color/groceries</item>
+        <item name="android:headerBackground">@color/groceries</item>
+    </style>
+
+    <style name="PetCare">
+        <item name="android:windowBackground">@color/pets</item>
+        <item name="colorAccent">@color/pets</item>
+        <item name="android:colorAccent">@color/pets</item>
+        <item name="android:statusBarColor">#303065</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="PetCareDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/pets</item>
+        <item name="colorPrimaryDark">@color/pets</item>
+        <item name="colorAccent">@color/pets</item>
+        <item name="android:headerBackground">@color/pets</item>
+    </style>
+
+
+    <style name="Loans">
+        <item name="android:windowBackground">@color/loans</item>
+        <item name="colorAccent">@color/loans</item>
+        <item name="android:colorAccent">@color/loans</item>
+        <item name="android:statusBarColor">#BF400A</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="LoansDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/loans</item>
+        <item name="colorPrimaryDark">@color/loans</item>
+        <item name="colorAccent">@color/loans</item>
+        <item name="android:headerBackground">@color/loans</item>
+    </style>
+
+
+    <style name="PersonalCare">
+        <item name="android:windowBackground">@color/personalcare</item>
+        <item name="colorAccent">@color/personalcare</item>
+        <item name="android:colorAccent">@color/personalcare</item>
+        <item name="android:statusBarColor">#8E3977</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="PersonalCareDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/personalcare</item>
+        <item name="colorPrimaryDark">@color/personalcare</item>
+        <item name="colorAccent">@color/personalcare</item>
+        <item name="android:headerBackground">@color/personalcare</item>
+    </style>
+
+
+
+    <style name="Miscellaneous">
+        <item name="android:windowBackground">@color/miscellaneous</item>
+        <item name="colorAccent">@color/miscellaneous</item>
+        <item name="android:colorAccent">@color/miscellaneous</item>
+        <item name="android:statusBarColor">#1C1C1C</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="MiscellaneousDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/miscellaneous</item>
+        <item name="colorPrimaryDark">@color/miscellaneous</item>
+        <item name="colorAccent">@color/miscellaneous</item>
+        <item name="android:headerBackground">@color/miscellaneous</item>
+    </style>
+
+
+    <style name="Entertainment">
+        <item name="android:windowBackground">@color/entertainment</item>
+        <item name="colorAccent">@color/entertainment</item>
+        <item name="android:colorAccent">@color/entertainment</item>
+        <item name="android:statusBarColor">#095B5C</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+
+    <style name="EntertainmentDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/entertainment</item>
+        <item name="colorPrimaryDark">@color/entertainment</item>
+        <item name="colorAccent">@color/entertainment</item>
+        <item name="android:headerBackground">@color/entertainment</item>
+    </style>
+
+    <style name="Transportation">
+        <item name="android:windowBackground">@color/transportation</item>
+        <item name="colorAccent">@color/transportation</item>
+        <item name="android:colorAccent">@color/transportation</item>
+        <item name="android:statusBarColor">#035585</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+    </style>
+
+    <style name="TransportationDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/transportation</item>
+        <item name="colorPrimaryDark">@color/transportation</item>
+        <item name="colorAccent">@color/transportation</item>
+        <item name="android:headerBackground">@color/transportation</item>
+    </style>
+
+
+
+</resources>

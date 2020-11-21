@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_screen">
+
+
+    <RelativeLayout
+        android:id="@+id/childRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="1dp"
+            android:padding="50dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:backgroundTint="@null"
+            android:background="@null"
+            android:focusableInTouchMode="true"/>
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif"
+            android:layout_toEndOf="@id/btn_Back"
+            android:text="Set Threshold"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allocated"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/toolbar_title"
+            android:layout_marginStart="30dp"
+            android:textSize="22dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/toolbar_title">
+
+
+            <ProgressBar
+                android:id="@+id/progressbar_1"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressBackgroundTint="@color/white_background"
+                android:background="@drawable/progress_bar"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/childRelLayout"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/percent_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:text="100%"
+                android:fontFamily="@font/roboto"
+                android:textSize="22sp"
+                android:textColor="@color/white_background"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <ImageButton
+        android:id="@+id/fab_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ic_home"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:padding="100dp"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_below="@id/childRelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/extend_graph_background">
+        <TextView
+            android:id="@+id/textViewBudgetEditThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textViewRemainingEditThrehsold"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView"
+            android:paddingLeft="20dp"
+            android:layout_below="@id/textViewBudgetEditThreshold"/>
+
+
+        <TextView
+            android:id="@+id/textViewThresholdCategory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:id="@+id/editTextThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textViewThresholdCategory"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp"
+            android:padding="20dp"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:hint="Enter Amount"
+            android:ems="10"
+            android:background="@drawable/edit_text_box_login"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/roboto"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/btnSetThreshold"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextThreshold"
+            android:background="@color/white_background"
+            android:elevation="8dp"
+            android:layout_marginLeft="40dp"
+            android:text="SET"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#31B30D" />
+
+        <Button
+            android:id="@+id/btnRemoveThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextThreshold"
+            android:background="@color/white_background"
+            android:elevation="8dp"
+            android:text="REMOVE"
+            android:textColor="#CD0D0D"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    
+
+</RelativeLayout>

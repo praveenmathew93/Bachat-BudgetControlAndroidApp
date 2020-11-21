@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/cardviews"
+    app:cardCornerRadius="6dp"
+    android:layout_marginVertical="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <TextView
+            android:id="@+id/textViewCategoryEarning"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:text="Category"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <TextView
+            android:id="@+id/textViewAmountText"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/textViewCategoryEarning"
+            android:gravity="center"
+            android:text="Earnt:"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <TextView
+            android:id="@+id/textViewDateText"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="31dp"
+            android:layout_toEndOf="@+id/textViewCategoryEarning"
+            android:gravity="center"
+            android:text="Date: "
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <TextView
+            android:id="@+id/textViewModeOfPaymentText"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:layout_toEndOf="@+id/textViewCategoryEarning"
+            android:gravity="center"
+            android:text="Mode: "
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <TextView
+            android:id="@+id/textViewCurrencyEarning"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/textViewAmountText"
+            android:gravity="center"
+            android:text="Currency"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+        <TextView
+            android:id="@+id/textViewAmountEarning"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/textViewCurrencyEarning"
+            android:gravity="center"
+            android:text="Amount"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <TextView
+            android:id="@+id/textViewDateEarning"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="31dp"
+            android:layout_toEndOf="@+id/textViewAmountText"
+            android:gravity="center"
+            android:text="Date"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+        <TextView
+            android:id="@+id/textViewModeOfPaymentEarning"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:layout_toEndOf="@+id/textViewAmountText"
+            android:gravity="center"
+            android:text="Mode of Payment"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColorBetalightbackground"/>
+
+        <ImageView
+            android:id="@+id/imageViewNote"
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/note" />
+
+        <ImageView
+            android:id="@+id/imageViewNoNote"
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/no_note" />
+
+        <ImageView
+            android:id="@+id/imageViewContact"
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="340dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/contact" />
+
+        <ImageView
+            android:id="@+id/imageViewNoContact"
+            android:layout_marginStart="340dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/no_contact" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

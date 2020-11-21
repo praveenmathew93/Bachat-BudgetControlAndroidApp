@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectFilter"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Filter Type"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spnOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:background="#4C4C4C"
+        android:backgroundTint="#4C4C4C" />
+
+    <TextView
+        android:id="@+id/chooseCategory"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="Choose Category" />
+
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="55dp"
+        android:background="#4C4C4C" />
+
+    <TextView
+        android:id="@+id/chooseDate"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:text="Choose Date " />
+
+    <TextView
+        android:id="@+id/chooseMonth"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="Month: "
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="120dp"/>
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="105dp"
+        android:background="#4C4C4C" />
+
+    <TextView
+        android:id="@+id/chooseYear"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="120dp"
+        android:text="Year: " />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="105dp"
+        android:background="#4C4C4C" />
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#221E1E"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="150dp"
+        android:text="Show Data" />
+
+    <ListView
+        android:id="@+id/listFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_background">
+
+
+    <RelativeLayout
+        android:id="@+id/relLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/expense_background">
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:padding="50dp"/>
+
+
+        <TextView
+            android:id="@+id/expense_income"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="New Expense"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/btn_Back" />
+
+
+        <TextView
+            android:id="@+id/toolbar_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:text="Choose Category"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/primarytextbetadarkbackground"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_below="@id/relLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relLayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/expense_background">
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/extend_graph_background">
+
+                <TextView
+                    android:id="@+id/recomText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="22dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16sp"
+                    android:textColor="@color/primaryTextColorBetalightbackground"
+                    android:text="Top categories based your activity"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/theGrid_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recomText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:numColumns="3"
+                    android:stretchMode="spacingWidthUniform">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theGrid_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="22dp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16sp"
+                    android:textColor="@color/primaryTextColorBetalightbackground"
+                    android:text="All categories"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/theGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:numColumns="3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:layout_below="@+id/category"
+                    android:stretchMode="spacingWidthUniform">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        android:elevation="5dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/Black"
+        app:srcCompat="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

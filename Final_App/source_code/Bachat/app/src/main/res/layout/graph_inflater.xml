@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp">
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:text="Summary for the month"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white_background"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_below="@id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/piechart"
+            android:layout_marginTop="20dp">
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <ImageView
+            android:id="@+id/action_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/action_image"
+            android:id="@+id/prompt_no_transactions"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primaryTextColorBetalightbackground"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/roboto"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/prompt_no_transactions"
+            android:textColor="@color/primaryTextColorBetalightbackground"
+            android:id="@+id/prompt_no_transactions_2"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/roboto"
+            android:visibility="visible"
+            tools:visibility="visible"/>
+</RelativeLayout>
