@@ -21,4 +21,4 @@ As a user, I would like to see my expenses in the form of graphs or charts, to e
 As a user, I would like to have a help section that gives me overview of how to use the application.
 As a user, I would like to have insights about my spending habits, including categories in which I spend most on a weekly/monthly/early basis.
 As a user, I would like the app to import/export my weekly/monthly/yearly details of entries.
-As a user, I would like to select the currency type when I enter the transaction and convert it to default currency that I have set.
+As a user, I would like to select the currency type when I enter the transaction and convert to default currency that I have set.
