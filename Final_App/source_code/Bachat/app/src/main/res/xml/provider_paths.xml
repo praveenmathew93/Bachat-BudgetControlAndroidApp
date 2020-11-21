@@ -1,9 +1,0 @@
-<paths>
-    <files-path
-        name="Expenses"
-        path="."/>
-
-    <files-path
-        name="Earnings"
-        path="."/>
-</paths>
